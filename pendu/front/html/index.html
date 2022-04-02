@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PENDU</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    
+
+    <div id="corps">
+        <h1>PENDU</h1>
+
+        <div id="turn">
+        </div>
+
+        <div id="lettersAlreadyUsed">
+        </div>
+
+        <div id="emptyLetter">
+        </div>
+    
+    <BR />
+
+    <div>
+        <input id="selectedLetter" value=""/>
+        <input type="button" id="AddLetter" value="Valider" onclick="selectedLetter()">
+    </div>
+
+</div>
+</body>
+
+<script src="../js/game.js"></script>
+
+</html>
