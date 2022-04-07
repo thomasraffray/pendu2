@@ -1,4 +1,4 @@
-const word = "TAUMEJeTaime".toLocaleUpperCase()
+const word = "thomas".toLocaleUpperCase()
 const wordLetter = word.split("")           // divise le mot en tableau de lettres séparées
 
 const emptyLetter = new Array(word.length)
@@ -20,7 +20,7 @@ function guestWordRender(emptyLetter){
         
     }
         
-    document.getElementById('emptyLetter').innerHTML = display.join()
+    document.getElementById('emptyLetter').innerHTML = display.join(' ')
 }
 
 
@@ -50,7 +50,7 @@ function getAllIndex(myWord, mySelectedLetter){             //on pacours chacun 
 
 
 
-function selectedLetter(username){
+function selectedLetter(){
     
     const letter = document.getElementById('selectedLetter').value
     //alert(letter)
